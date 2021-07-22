@@ -2,17 +2,6 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
-	apiKey: 'AIzaSyCHMIXq1El1rqTieFi31U2G1JSKTweS7js',
-	authDomain: 'react-shoping-7a4ca.firebaseapp.com',
-	databaseURL: 'https://react-shoping-7a4ca.firebaseio.com',
-	projectId: 'react-shoping-7a4ca',
-	storageBucket: 'react-shoping-7a4ca.appspot.com',
-	messagingSenderId: '1020215674818',
-	appId: '1:1020215674818:web:c2c1eb7ff6afd4cf2cf85b',
-	measurementId: 'G-NN8PR7BZC5',
-};
-
 firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
